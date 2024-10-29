@@ -53,8 +53,8 @@ class HomePage extends StatelessWidget {
                 // Gambar Peace Lily
                 Column(
                   children: [
-                    Image.asset(
-                      'assets/peace_lily.jpg', // Path gambar Peace Lily
+                    Image.network(
+                      'https://th.bing.com/th/id/OIP.vxvUcUpcsvgfF3bEwP2tMgHaHa?w=186&h=186&c=7&r=0&o=5&pid=1.7', // URL gambar Peace Lily
                       width: 80,
                       height: 80,
                     ),
@@ -76,8 +76,8 @@ class HomePage extends StatelessWidget {
                 // Gambar Aloe Vera
                 Column(
                   children: [
-                    Image.asset(
-                      'assets/aloe_vera.jpg', // Path gambar Aloe Vera
+                    Image.network(
+                      'https://thumbs.dreamstime.com/b/vector-cartoon-illustration-home-potted-succulent-aloe-vera-plant-isolated-238463470.jpg', // URL gambar Aloe Vera
                       width: 80,
                       height: 80,
                     ),
