@@ -30,18 +30,20 @@ class MainPage extends StatelessWidget {
         children: [
           // Background image
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
-                image: const AssetImage(
-                    'assets/plant_background.jpg'), // path ke gambar ilustrasi
+                image: NetworkImage(
+                    'https://cdn.shopify.com/s/files/1/0093/6227/6415/products/2-02_1280x.png?v=1612199656'), // URL gambar ilustrasi
                 fit: BoxFit.cover,
                 colorFilter: ColorFilter.mode(
-                  Colors.green.withOpacity(0.3),
+                  Color.fromRGBO(
+                      0, 128, 0, 0.3), // Menggunakan warna dengan transparansi
                   BlendMode.dstATop,
                 ),
               ),
             ),
           ),
+
           Center(
             // Membungkus Column dengan Center agar berada di tengah
             child: Padding(
@@ -105,7 +107,7 @@ class MainPage extends StatelessWidget {
                     onPressed: () {
                       // Aksi untuk tombol Create My Account
                     },
-                    child: const Text('Create My Account'),
+                    child: const Text('Create New Account'),
                   ),
                 ],
               ),
